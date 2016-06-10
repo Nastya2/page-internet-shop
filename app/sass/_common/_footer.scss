@@ -1,0 +1,13 @@
+.footer {
+	
+	color: #2e2e2e;
+	
+    margin-top: - $footer-height;
+    height: $footer-height;
+    position: relative;//above wrapper
+    
+}
+.footer .container{
+    padding-top: 20px;
+    text-align: center;
+}

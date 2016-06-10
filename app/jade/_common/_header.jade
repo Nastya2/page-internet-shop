@@ -1,0 +1,32 @@
+header.header
+    .container
+        .header__top
+            .header__logo
+                a(href="index.html").logo__link
+                    img(src="img/header-logo.png" alt="").logo__img
+            .header__search
+                .search
+                    form(action="").search__form
+                        input(type="text" name="" id="" placeholder="Поиск").search__input
+                        input(type="submit" value="").search__submit
+            .header__menu
+             - var items = ["Карта проезда","История заказов","Корзина"]
+                ul.menu__list
+                    each item in items
+                        li(class="menu__item")
+                            a(href="#" class="menu__link"  +  ((item == "Корзина") ? " menu__link-iconed" : ""))= item
+        nav.nav
+         - var nav = ["Планшеты","Мобильные устройства","Персональные компьютеры","Ноутбуки","Аксессуары","Бытовая техника"]
+         - var icons = ['img/icons-nav/accessories.svg','img/icons-nav/appliances.svg','img/icons-nav/imac.svg','img/icons-nav/ipad.svg','img/icons-nav/iphone.svg','img/icons-nav/macbook.svg']
+            ul.nav__list
+                each item, index in nav
+                        li(class="nav__item")
+                            a(href="#" class="nav__link"  +  ((item == "Мобильные устройства") ? " nav__link-color" : ""))
+                                span.nav__icon
+                                    img(src = icons[index])  
+                                
+                                
+                                span.nav__text= item
+                
+                            
+                            

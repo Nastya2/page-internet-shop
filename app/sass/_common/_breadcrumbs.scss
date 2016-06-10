@@ -1,0 +1,39 @@
+.breadcrumbs__list{
+   
+    margin-bottom: 15px;
+}
+
+.breadcrumbs__item{
+  display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+   &:first-child{
+       margin-left: 0px;
+       .breadcrumbs__link{
+        
+        
+        &:before{
+            display: none;
+          }
+      }
+    }
+}
+.breadcrumbs__link{
+  font-size: 11px;
+    color: #fa3f37;
+    
+    
+    
+    &:before{
+        content: "";
+        display: inline-block;
+        background: url(../img/arrow.png);
+        width: 16px;
+        height: 7px;
+        margin-right: 15px;
+        vertical-align: middle;
+        
+    }
+    
+     
+}

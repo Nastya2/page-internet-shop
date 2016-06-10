@@ -1,0 +1,8 @@
+section.breadcrumbs
+
+    .container
+        ul.breadcrumbs__list
+            - var items = ["Главная","Мобильные устройства"]
+            each item in items
+                li.breadcrumbs__item
+                    a(href="#").breadcrumbs__link= item

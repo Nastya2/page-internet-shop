@@ -1,0 +1,152 @@
+.header{
+background: #fb3e38; /* Old browsers */
+background: -moz-linear-gradient(left, #fb3e38 0%, #f7462f 21%, #f7462f 28%, #f66b2b 57%, #f97f23 100%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #fb3e38 0%,#f7462f 21%,#f7462f 28%,#f66b2b 57%,#f97f23 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #fb3e38 0%,#f7462f 21%,#f7462f 28%,#f66b2b 57%,#f97f23 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb3e38', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+   margin-bottom: 20px;
+}
+.header__top{
+    padding: 20px;
+   padding-bottom: 10px;
+    border-bottom:1px solid rgba(#FFF,.2);
+    
+    @include clearfix;
+    
+}
+.header__logo,.header__search, .header__menu{
+    float: left;
+}
+.header__logo{
+    width: 25%;
+}
+.header__search{
+    width: 40%;
+}
+.header__menu{
+    width: 35%;
+}
+.logo__link{
+    display: inline-block;
+}
+.logo__img{
+    display: block;
+    max-height: 42px;
+    max-width: 170px;
+}
+/*-------------search---------------------------*/
+.search{
+    position: relative;
+    
+}
+.search__input{
+  padding: 10px 40px 10px 35px;
+    
+    border: 0 none;
+    @include border-radius(50px);
+     @include placeholder(#FFF);
+    background: rgba(#FFF,.2);
+    outline: none;
+    color: #FFF;
+    width: 100%;
+}
+.search__submit{
+    background: url(../img/search__icon.png) 0 0  no-repeat;
+    width: 18px;
+    height: 18px;
+    display: block;
+    border: none;
+    position: absolute;
+    top:50%;
+    margin-top: -9px;
+    right: 18px;
+    cursor: pointer;
+    outline: none;
+}
+/*--------------menu---------------------------*/
+.menu__item{
+    display: inline-block;
+}
+.menu__list{
+    @include justify;
+}
+.menu__link{
+    display: block;
+    padding: 10px;
+    font-size: 13px;
+    color: #FFF;
+}
+.menu__link-iconed{
+   padding-right: 20px;
+    padding-left: 50px;
+    border: 2px solid #ffaf6a;
+   @include border-radius(20px);
+    position: relative;
+    
+    &:before{
+        
+       
+    content: "";
+    background-image: url(../img/basket__icon.png);
+    background-repeat: repeat-x;
+    background-position: center center;
+    position: absolute;
+    width: 21px;
+    height: 18px;
+    left: 20px;
+    
+        
+    }
+    
+    
+}
+
+/*--------------nav---------------------------*/
+.nav__list{
+    @include justify;
+    padding-top: 20px;
+  
+}
+
+.nav__item{
+    display: inline-block;
+}
+
+.nav__link{
+     &:hover{
+    .nav__text{
+       
+        color: #ffc960;
+            }
+         
+    
+    }
+}
+
+
+.nav__link-color{
+    .nav__text{ 
+    color: #ffc960;
+}
+}
+.nav__icon{
+   display: inline-block;
+    vertical-align: middle;
+    
+    }
+    
+
+
+.nav__text{
+    color: #FFF;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 5px;
+    
+    &:first-child{
+        padding-left: 0;
+    }
+}
+

@@ -301,15 +301,12 @@ a {
   vertical-align: middle;
 }
 
-.title {
+h1 {
+  font-size: 24px;
   font-family: 'helveticaneuecyrlight';
   color: #2e2e2e;
   margin-top: 0;
   font-weight: normal;
-}
-
-h1 {
-  font-size: 24px;
 }
 
 .content-wrapper .container {

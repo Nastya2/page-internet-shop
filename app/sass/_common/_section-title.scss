@@ -1,10 +1,7 @@
-.title{
+h1 {
+    font-size: 24px;
     @include helvetica(light);
     color: #2e2e2e;
     margin-top: 0;
     font-weight: normal;
-}
-
-h1 {
-    font-size: 24px;
 }

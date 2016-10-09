@@ -1,15 +1,16 @@
 .content-wrapper{
     .container{
-    background: #FFF;
-}
+        background: #FFF;
+    }
 }
 
 .sidebar{
     float: left;
     width: 25%;
 }
+
 .content{
-   float: right;
+    float: right;
     width: 75%;
     border-left: 1px solid #e7e7e7;
 }
@@ -25,6 +26,7 @@
     width: 30%;
     padding: 25px;
 }
+
 .product__description{
     float: left;
     width: 45%;
@@ -46,6 +48,7 @@
     height: 235px;
     position: relative;
 }
+
 .slideshow__display-img{
     @include absolute-center;
     max-width: 95%;
@@ -55,17 +58,17 @@
 .slideshow__thumbs {
     @include clearfix;
 }
+
 .slideshow__thumbs-item{
-  float: left;
+    float: left;
     width: 25%;
-    
-    
 }
 
 .slideshow__thumbs-link{
     display: block;
     height: 54px;
     position: relative;
+    
     img{
         display: block;
         @include absolute-center;
@@ -73,25 +76,28 @@
         max-width: 100%;
     }
 }
+
 .product__description{
     padding: 40px 25px;
 }
+
 .product__title {
-   margin-top: 0;
+    margin-top: 0;
     font-weight: normal;
     @include helvetica(light);
     font-size: 24px;
-    
     margin-bottom: 25px;
 }
+
 .desc-content__list{
-  font-size: 14px;
+    font-size: 14px;
     color: #3676767;
     
     li{
         margin-bottom: 10px;
     }
 }
+
 .product__price{
     position: absolute;
     top: 0;
@@ -101,6 +107,7 @@
     padding: 20px;
     font-size: 24px;
 }
+
 .product__price-inner{
     border: 1px solid #e7e7e7;
     height: 100%;
@@ -118,17 +125,17 @@
     @include border-radius(50px);
     @include helvetica(medium);
     font-size: 20px;
-  
-    
 }
 
 
-/*------------------aside------------------------------*/
+/*------------------------------------------------*/
+
 .categories__item{
     border-bottom: 1px solid #e7e7e7;
     position: relative;
     
 }
+
 .categories__link{
     padding: 10px 20px;
     display: block;
@@ -136,6 +143,7 @@
     font-size: 15px;
     padding-right: 50px;
 }
+
 .categories__icon{
     display: inline-block;
     vertical-align: middle;
@@ -143,6 +151,7 @@
     text-align: center;
      
 }
+
 .categories__text{
     vertical-align: middle;
     display: inline-block;

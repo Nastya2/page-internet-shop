@@ -1,23 +1,20 @@
 extends ./main.jade
 
- 
-
 block content
 
-
-
-    section.content-wrapper
+    .content-wrapper
         .container
-            aside.sidebar
+            .sidebar
+                - var alt = ['phone','phone','phone','phone']
                 - var categories = ["Мобильные телефоны","Планшеты","Навигаторы"]
                 - var categoricons = ['img/categories/icon1.png','img/categories/icon2.png','img/categories/icon3.png']
-                 
+                
                 ul.categories
                     each item, index in categories
                         li.categories__item
                             a(href="").categories__link
                                 span.categories__icon
-                                    img(src= categoricons[index])       
+                                    img(src= categoricons[index] alt= alt[index])       
                                 span.categories__text= item
                             .categories__count 85  
 
@@ -28,21 +25,18 @@ block content
                         li.product__item
                            .product__slideshow 
                                 .slideshow__display
-                                    img(src="img/content/phone.png" alt="" class="slideshow__display-img")
-                                - var little = ['img/content/phone-little1.png','img/content/phone-little2.png','img/content/phone-little3.png','img/content/phone-little4.png']
+                                    img(src="img/content/phone.png" alt="phone" class="slideshow__display-img")
 
                                 ul.slideshow__thumbs 
-                                    each value in little		  
-                                        li.slideshow__thumbs-item
-                                            a(href="").slideshow__thumbs-link
-                                                img(src=value)
+                                    - var alt = ['phone','phone','phone','phone']
+                                    - var little = ['img/content/phone-little1.png','img/content/phone-little2.png','img/content/phone-little3.png','img/content/phone-little4.png']
+                                        each value,index in little		  
+                                            li.slideshow__thumbs-item
+                                                a(href="").slideshow__thumbs-link
+                                                    img(src=value alt= alt[index])
 
                             .product__description
                                 h2.product__title iphone 6s plus 128GB
-
-
-
-
                                 - var desc = [{'option': 'Диагональ дисплея (дюйм): ', 'val': '5.5'}, {'option':'Количество SIM: ','val': 2}, {'option':'Цвет: ','val':'белый'}, {'option':'ОС: ','val':'Android'}, {'option':'Связь 3G: ','val':'Есть'}, {'option':'4G (LTE): ','val':'Нет'}, {'option':'GPS-модуль: ','val':'есть'}]
 
                                 ul.desc-content__list

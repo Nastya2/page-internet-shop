@@ -6,42 +6,48 @@ background: linear-gradient(to right, #fb3e38 0%,#f7462f 21%,#f7462f 28%,#f66b2b
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb3e38', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
    margin-bottom: 20px;
 }
+
 .header__top{
     padding: 20px;
-   padding-bottom: 10px;
+    padding-bottom: 10px;
     border-bottom:1px solid rgba(#FFF,.2);
-    
     @include clearfix;
-    
 }
+
 .header__logo,.header__search, .header__menu{
     float: left;
 }
+
 .header__logo{
     width: 25%;
 }
+
 .header__search{
     width: 40%;
 }
+
 .header__menu{
     width: 35%;
 }
+
 .logo__link{
     display: inline-block;
 }
+
 .logo__img{
     display: block;
     max-height: 42px;
     max-width: 170px;
 }
+
 /*-------------search---------------------------*/
+
 .search{
     position: relative;
-    
 }
+
 .search__input{
-  padding: 10px 40px 10px 35px;
-    
+    padding: 10px 40px 10px 35px;
     border: 0 none;
     @include border-radius(50px);
      @include placeholder(#FFF);
@@ -50,6 +56,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb3e38', end
     color: #FFF;
     width: 100%;
 }
+
 .search__submit{
     background: url(../img/search__icon.png) 0 0  no-repeat;
     width: 18px;
@@ -64,28 +71,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb3e38', end
     outline: none;
 }
 /*--------------menu---------------------------*/
+
 .menu__item{
     display: inline-block;
 }
+
 .menu__list{
     @include justify;
 }
+
 .menu__link{
     display: block;
     padding: 10px;
     font-size: 13px;
     color: #FFF;
 }
+
 .menu__link-iconed{
-   padding-right: 20px;
+    padding-right: 20px;
     padding-left: 50px;
     border: 2px solid #ffaf6a;
-   @include border-radius(20px);
+    @include border-radius(20px);
     position: relative;
     
     &:before{
-        
-       
     content: "";
     background-image: url(../img/basket__icon.png);
     background-repeat: repeat-x;
@@ -94,18 +103,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb3e38', end
     width: 21px;
     height: 18px;
     left: 20px;
-    
-        
     }
-    
-    
 }
 
-/*--------------nav---------------------------*/
+/*---------------- nav ---------------------------*/
+
 .nav__list{
     @include justify;
     padding-top: 20px;
-  
 }
 
 .nav__item{
@@ -113,30 +118,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb3e38', end
 }
 
 .nav__link{
-     &:hover{
-    .nav__text{
-       
-        color: #ffc960;
-            }
-         
-    
+    &:hover{
+        .nav__text{
+           color: #ffc960;
+        }
     }
 }
 
 
 .nav__link-color{
     .nav__text{ 
-    color: #ffc960;
-}
-}
-.nav__icon{
-   display: inline-block;
-    vertical-align: middle;
-    
+        color: #ffc960;
     }
+}
+
+.nav__icon{
+    display: inline-block;
+    vertical-align: middle;
+}
     
-
-
 .nav__text{
     color: #FFF;
     font-size: 12px;

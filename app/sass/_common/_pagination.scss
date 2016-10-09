@@ -10,21 +10,19 @@
 .pagination__item{
     display: inline-block;
     vertical-align: middle;
-    
-
-    
 }
+
 .pagination__link{
-   width: 40px;
+    width: 40px;
     text-align: center;
     display: block;
-   color: #2e2e2e;
+    color: #2e2e2e;
     
     &:hover{
         color: red;
     }
-    
 }
+
 .pagination__list{
     margin: 0 26px;
 }
@@ -32,29 +30,25 @@
 
 $map: sprite-map('../img/controll/*.png',$spacing:70px);
 
-
- .pagination__controll-right{
-  @include get-sprite($map,next);
-   display: inline-block;
+.pagination__controll-right{
+    @include get-sprite($map,next);
+    display: inline-block;
         
-     &:hover{
+    &:hover{
         @include get-sprite($map,next-hover);
-         
-     }
+    }
 }
 
 .pagination__controll-left{
-@include get-sprite($map,prev);
- display: inline-block; 
+    @include get-sprite($map,prev);
+    display: inline-block; 
     
     &:hover{
         @include get-sprite($map,prevt-hover);
-        
-     }
+    }
 }
 
 .pagination__list, .pagination__controll{
-   display: inline-block;
+    display: inline-block;
     vertical-align: middle;
-    
 }

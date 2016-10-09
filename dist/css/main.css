@@ -230,7 +230,7 @@ a {
   left: 20px;
 }
 
-/*--------------nav---------------------------*/
+/*---------------- nav ---------------------------*/
 .nav__list {
   text-align: justify;
   padding-top: 20px;
@@ -303,10 +303,13 @@ a {
 
 .title {
   font-family: 'helveticaneuecyrlight';
-  font-size: 24px;
   color: #2e2e2e;
   margin-top: 0;
   font-weight: normal;
+}
+
+h1 {
+  font-size: 24px;
 }
 
 .content-wrapper .container {
@@ -457,7 +460,7 @@ a {
   font-size: 20px;
 }
 
-/*------------------aside------------------------------*/
+/*------------------------------------------------*/
 .categories__item {
   border-bottom: 1px solid #e7e7e7;
   position: relative;
